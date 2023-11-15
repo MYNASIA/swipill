@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swipill</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+  </head>
+  <body>
+    <div class="layer">
+      <div style="width: 100%; height: 100%; display: flex">
+        <div style="width: 20%; padding: 2%; z-index: 1">
+          <img src="logo.png" alt="" style="width: 80%; height: auto" />
+          <div style="background-color: white; border-radius: 20px">
+            <p style="padding: 10% 0 0 10%; font-weight: bold">
+              Compétence du candiat
+            </p>
+            <div style="display: flex; width: 100%; flex-wrap: wrap">
+              <img
+                src="badge.png"
+                alt=""
+                style="width: 25%; margin: 10%; height: auto"
+              />
+              <img
+                src="badge.png"
+                alt=""
+                style="width: 25%; margin: 10%; height: auto"
+              />
+              <img
+                src="badge.png"
+                alt=""
+                style="width: 25%; margin: 10%; height: auto"
+              />
+              <img
+                src="badge.png"
+                alt=""
+                style="width: 25%; margin: 10%; height: auto"
+              />
+              <img
+                src="badge.png"
+                alt=""
+                style="width: 25%; margin: 10%; height: auto"
+              />
+              <img
+                src="badge.png"
+                alt=""
+                style="width: 25%; margin: 10%; height: auto"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="tinder" id="tinder">
+          <div class="tinder--status">
+            <i class="bx bx-x-circle"></i>
+            <i class="bx bx-user-check"></i>
+          </div>
+
+          <div class="tinder--cards">
+            <div class="tinder--card">
+              <img
+                src="https://live.staticflickr.com/5252/5403292396_0804de9bcf_b.jpg"
+                style="object-fit: cover"
+              />
+              <div>
+                <h2
+                  style="
+                    font-size: 2vw;
+                    text-align: left;
+                    margin: 30px 0 0 30px;
+                  "
+                >
+                  Léonie Arnaud
+                </h2>
+                <h2
+                  style="
+                    font-size: 1vw;
+                    text-align: left;
+                    margin: 0;
+                    margin-left: 30px;
+                  "
+                >
+                  Assistante marketing
+                </h2>
+                <p
+                  style="
+                    text-align: left;
+                    margin-left: 30px;
+                    padding: 20px;
+                    background: white;
+                    width: calc(80% - 30px);
+                    border-radius: 20px;
+                  "
+                >
+                  “ Souriante et de bonne humeur, je suis à la recherche d’une
+                  entreprise étique et qui fera fondre mon coeur”
+                </p>
+                <p
+                  style="
+                    text-align: left;
+                    margin-left: 30px;
+                    color: #487839;
+                    font-size: 0.9vw;
+                  "
+                >
+                  Infos
+                </p>
+                <div
+                  style="
+                    display: flex;
+                    margin-left: 30px;
+                    width: calc(100% - 60px);
+                    flex-wrap: wrap;
+                    text-align: left;
+                    font-size: 0.9vw;
+                  "
+                >
+                  <div style="width: 50%">
+                    <i class="bx bxs-cake"></i>
+                    26 ans
+                  </div>
+
+                  <div style="width: 50%">
+                    <i class="bx bxs-home-alt-2"></i>
+                    Paris 15ème
+                  </div>
+
+                  <div style="width: 50%">
+                    <i class="bx bxl-linkedin-square"></i>
+                    leonie.arnaud
+                  </div>
+
+                  <div style="width: 50%">
+                    <i class="bx bxs-camera-home"></i>
+                    Présentiel, Télétravail, Hybride
+                  </div>
+                </div>
+                <p
+                  style="
+                    text-align: left;
+                    margin-left: 30px;
+                    color: #487839;
+                    font-size: 0.9vw;
+                  "
+                >
+                  Diplôme
+                </p>
+                <p
+                  style="
+                    display: flex;
+                    margin-left: 30px;
+                    width: calc(100% - 60px);
+                    flex-wrap: wrap;
+                    text-align: left;
+                    font-size: 0.9vw;
+                  "
+                >
+                  Voici un texte quelqu'onque, par exemple
+                </p>
+              </div>
+            </div>
+            <div class="tinder--card">
+              <img
+                src="https://live.staticflickr.com/5252/5403292396_0804de9bcf_b.jpg"
+                style="object-fit: cover"
+              />
+              <div>
+                <h2
+                  style="
+                    font-size: 2vw;
+                    text-align: left;
+                    margin: 30px 0 0 30px;
+                  "
+                >
+                  Léonie Arnaud
+                </h2>
+                <h2
+                  style="
+                    font-size: 1vw;
+                    text-align: left;
+                    margin: 0;
+                    margin-left: 30px;
+                  "
+                >
+                  Assistante marketing
+                </h2>
+                <p
+                  style="
+                    text-align: left;
+                    margin-left: 30px;
+                    padding: 20px;
+                    background: white;
+                    width: calc(80% - 30px);
+                    border-radius: 20px;
+                  "
+                >
+                  “ Souriante et de bonne humeur, je suis à la recherche d’une
+                  entreprise étique et qui fera fondre mon coeur”
+                </p>
+                <p
+                  style="
+                    text-align: left;
+                    margin-left: 30px;
+                    color: #487839;
+                    font-size: 0.9vw;
+                  "
+                >
+                  Infos
+                </p>
+                <div
+                  style="
+                    display: flex;
+                    margin-left: 30px;
+                    width: calc(100% - 60px);
+                    flex-wrap: wrap;
+                    text-align: left;
+                    font-size: 0.9vw;
+                  "
+                >
+                  <div style="width: 50%">
+                    <i class="bx bxs-cake"></i>
+                    26 ans
+                  </div>
+
+                  <div style="width: 50%">
+                    <i class="bx bxs-home-alt-2"></i>
+                    Paris 15ème
+                  </div>
+
+                  <div style="width: 50%">
+                    <i class="bx bxl-linkedin-square"></i>
+                    leonie.arnaud
+                  </div>
+
+                  <div style="width: 50%">
+                    <i class="bx bxs-camera-home"></i>
+                    Présentiel, Télétravail, Hybride
+                  </div>
+                </div>
+                <p
+                  style="
+                    text-align: left;
+                    margin-left: 30px;
+                    color: #487839;
+                    font-size: 0.9vw;
+                  "
+                >
+                  Diplôme
+                </p>
+                <p
+                  style="
+                    display: flex;
+                    margin-left: 30px;
+                    width: calc(100% - 60px);
+                    flex-wrap: wrap;
+                    text-align: left;
+                    font-size: 0.9vw;
+                  "
+                >
+                  Voici un texte quelqu'onque, par exemple
+                </p>
+              </div>
+            </div>
+            <div class="tinder--card">
+              <img
+                src="https://live.staticflickr.com/5252/5403292396_0804de9bcf_b.jpg"
+                style="object-fit: cover"
+              />
+              <div>
+                <h2
+                  style="
+                    font-size: 2vw;
+                    text-align: left;
+                    margin: 30px 0 0 30px;
+                  "
+                >
+                  Léonie Arnaud
+                </h2>
+                <h2
+                  style="
+                    font-size: 1vw;
+                    text-align: left;
+                    margin: 0;
+                    margin-left: 30px;
+                  "
+                >
+                  Assistante marketing
+                </h2>
+                <p
+                  style="
+                    text-align: left;
+                    margin-left: 30px;
+                    padding: 20px;
+                    background: white;
+                    width: calc(80% - 30px);
+                    border-radius: 20px;
+                  "
+                >
+                  “ Souriante et de bonne humeur, je suis à la recherche d’une
+                  entreprise étique et qui fera fondre mon coeur”
+                </p>
+                <p
+                  style="
+                    text-align: left;
+                    margin-left: 30px;
+                    color: #487839;
+                    font-size: 0.9vw;
+                  "
+                >
+                  Infos
+                </p>
+                <div
+                  style="
+                    display: flex;
+                    margin-left: 30px;
+                    width: calc(100% - 60px);
+                    flex-wrap: wrap;
+                    text-align: left;
+                    font-size: 0.9vw;
+                  "
+                >
+                  <div style="width: 50%">
+                    <i class="bx bxs-cake"></i>
+                    26 ans
+                  </div>
+
+                  <div style="width: 50%">
+                    <i class="bx bxs-home-alt-2"></i>
+                    Paris 15ème
+                  </div>
+
+                  <div style="width: 50%">
+                    <i class="bx bxl-linkedin-square"></i>
+                    leonie.arnaud
+                  </div>
+
+                  <div style="width: 50%">
+                    <i class="bx bxs-camera-home"></i>
+                    Présentiel, Télétravail, Hybride
+                  </div>
+                </div>
+                <p
+                  style="
+                    text-align: left;
+                    margin-left: 30px;
+                    color: #487839;
+                    font-size: 0.9vw;
+                  "
+                >
+                  Diplôme
+                </p>
+                <p
+                  style="
+                    display: flex;
+                    margin-left: 30px;
+                    width: calc(100% - 60px);
+                    flex-wrap: wrap;
+                    text-align: left;
+                    font-size: 0.9vw;
+                  "
+                >
+                  Voici un texte quelqu'onque, par exemple
+                </p>
+              </div>
+            </div>
+            <div class="tinder--card">
+              <img
+                src="https://live.staticflickr.com/5252/5403292396_0804de9bcf_b.jpg"
+                style="object-fit: cover"
+              />
+              <div>
+                <h2
+                  style="
+                    font-size: 2vw;
+                    text-align: left;
+                    margin: 30px 0 0 30px;
+                  "
+                >
+                  Léonie Arnaud
+                </h2>
+                <h2
+                  style="
+                    font-size: 1vw;
+                    text-align: left;
+                    margin: 0;
+                    margin-left: 30px;
+                  "
+                >
+                  Assistante marketing
+                </h2>
+                <p
+                  style="
+                    text-align: left;
+                    margin-left: 30px;
+                    padding: 20px;
+                    background: white;
+                    width: calc(80% - 30px);
+                    border-radius: 20px;
+                  "
+                >
+                  “ Souriante et de bonne humeur, je suis à la recherche d’une
+                  entreprise étique et qui fera fondre mon coeur”
+                </p>
+                <p
+                  style="
+                    text-align: left;
+                    margin-left: 30px;
+                    color: #487839;
+                    font-size: 0.9vw;
+                  "
+                >
+                  Infos
+                </p>
+                <div
+                  style="
+                    display: flex;
+                    margin-left: 30px;
+                    width: calc(100% - 60px);
+                    flex-wrap: wrap;
+                    text-align: left;
+                    font-size: 0.9vw;
+                  "
+                >
+                  <div style="width: 50%">
+                    <i class="bx bxs-cake"></i>
+                    26 ans
+                  </div>
+
+                  <div style="width: 50%">
+                    <i class="bx bxs-home-alt-2"></i>
+                    Paris 15ème
+                  </div>
+
+                  <div style="width: 50%">
+                    <i class="bx bxl-linkedin-square"></i>
+                    leonie.arnaud
+                  </div>
+
+                  <div style="width: 50%">
+                    <i class="bx bxs-camera-home"></i>
+                    Présentiel, Télétravail, Hybride
+                  </div>
+                </div>
+                <p
+                  style="
+                    text-align: left;
+                    margin-left: 30px;
+                    color: #487839;
+                    font-size: 0.9vw;
+                  "
+                >
+                  Diplôme
+                </p>
+                <p
+                  style="
+                    display: flex;
+                    margin-left: 30px;
+                    width: calc(100% - 60px);
+                    flex-wrap: wrap;
+                    text-align: left;
+                    font-size: 0.9vw;
+                  "
+                >
+                  Voici un texte quelqu'onque, par exemple
+                </p>
+              </div>
+            </div>
+            <div class="tinder--card">
+              <img
+                src="https://live.staticflickr.com/5252/5403292396_0804de9bcf_b.jpg"
+                style="object-fit: cover"
+              />
+              <div>
+                <h2
+                  style="
+                    font-size: 2vw;
+                    text-align: left;
+                    margin: 30px 0 0 30px;
+                  "
+                >
+                  Léonie Arnaud
+                </h2>
+                <h2
+                  style="
+                    font-size: 1vw;
+                    text-align: left;
+                    margin: 0;
+                    margin-left: 30px;
+                  "
+                >
+                  Assistante marketing
+                </h2>
+                <p
+                  style="
+                    text-align: left;
+                    margin-left: 30px;
+                    padding: 20px;
+                    background: white;
+                    width: calc(80% - 30px);
+                    border-radius: 20px;
+                  "
+                >
+                  “ Souriante et de bonne humeur, je suis à la recherche d’une
+                  entreprise étique et qui fera fondre mon coeur”
+                </p>
+                <p
+                  style="
+                    text-align: left;
+                    margin-left: 30px;
+                    color: #487839;
+                    font-size: 0.9vw;
+                  "
+                >
+                  Infos
+                </p>
+                <div
+                  style="
+                    display: flex;
+                    margin-left: 30px;
+                    width: calc(100% - 60px);
+                    flex-wrap: wrap;
+                    text-align: left;
+                    font-size: 0.9vw;
+                  "
+                >
+                  <div style="width: 50%">
+                    <i class="bx bxs-cake"></i>
+                    26 ans
+                  </div>
+
+                  <div style="width: 50%">
+                    <i class="bx bxs-home-alt-2"></i>
+                    Paris 15ème
+                  </div>
+
+                  <div style="width: 50%">
+                    <i class="bx bxl-linkedin-square"></i>
+                    leonie.arnaud
+                  </div>
+
+                  <div style="width: 50%">
+                    <i class="bx bxs-camera-home"></i>
+                    Présentiel, Télétravail, Hybride
+                  </div>
+                </div>
+                <p
+                  style="
+                    text-align: left;
+                    margin-left: 30px;
+                    color: #487839;
+                    font-size: 0.9vw;
+                  "
+                >
+                  Diplôme
+                </p>
+                <p
+                  style="
+                    display: flex;
+                    margin-left: 30px;
+                    width: calc(100% - 60px);
+                    flex-wrap: wrap;
+                    text-align: left;
+                    font-size: 0.9vw;
+                  "
+                >
+                  Voici un texte quelqu'onque, par exemple
+                </p>
+              </div>
+            </div>
+            <div class="tinder--card">
+              <img
+                src="https://live.staticflickr.com/5252/5403292396_0804de9bcf_b.jpg"
+                style="object-fit: cover"
+              />
+              <div>
+                <h2
+                  style="
+                    font-size: 2vw;
+                    text-align: left;
+                    margin: 30px 0 0 30px;
+                  "
+                >
+                  Léonie Arnaud
+                </h2>
+                <h2
+                  style="
+                    font-size: 1vw;
+                    text-align: left;
+                    margin: 0;
+                    margin-left: 30px;
+                  "
+                >
+                  Assistante marketing
+                </h2>
+                <p
+                  style="
+                    text-align: left;
+                    margin-left: 30px;
+                    padding: 20px;
+                    background: white;
+                    width: calc(80% - 30px);
+                    border-radius: 20px;
+                  "
+                >
+                  “ Souriante et de bonne humeur, je suis à la recherche d’une
+                  entreprise étique et qui fera fondre mon coeur”
+                </p>
+                <p
+                  style="
+                    text-align: left;
+                    margin-left: 30px;
+                    color: #487839;
+                    font-size: 0.9vw;
+                  "
+                >
+                  Infos
+                </p>
+                <div
+                  style="
+                    display: flex;
+                    margin-left: 30px;
+                    width: calc(100% - 60px);
+                    flex-wrap: wrap;
+                    text-align: left;
+                    font-size: 0.9vw;
+                  "
+                >
+                  <div style="width: 50%">
+                    <i class="bx bxs-cake"></i>
+                    26 ans
+                  </div>
+
+                  <div style="width: 50%">
+                    <i class="bx bxs-home-alt-2"></i>
+                    Paris 15ème
+                  </div>
+
+                  <div style="width: 50%">
+                    <i class="bx bxl-linkedin-square"></i>
+                    leonie.arnaud
+                  </div>
+
+                  <div style="width: 50%">
+                    <i class="bx bxs-camera-home"></i>
+                    Présentiel, Télétravail, Hybride
+                  </div>
+                </div>
+                <p
+                  style="
+                    text-align: left;
+                    margin-left: 30px;
+                    color: #487839;
+                    font-size: 0.9vw;
+                  "
+                >
+                  Diplôme
+                </p>
+                <p
+                  style="
+                    display: flex;
+                    margin-left: 30px;
+                    width: calc(100% - 60px);
+                    flex-wrap: wrap;
+                    text-align: left;
+                    font-size: 0.9vw;
+                  "
+                >
+                  Voici un texte quelqu'onque, par exemple
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tinder--buttons">
+            <button id="nope"><i class="bx bx-x-circle"></i></button>
+            <button id="love"><i class="bx bx-user-check"></i></button>
+          </div>
+        </div>
+        <div
+          style="
+            width: 20%;
+            height: 90vh;
+            padding: 2%;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          "
+        >
+          <div>
+            <p style="font-weight: bold">Formations</p>
+            <div style="display: flex; width: 100%; flex-wrap: wrap">
+              <div
+                style="
+                  background-color: white;
+                  width: 20vw;
+                  height: 5vh;
+                  border-radius: 20px;
+                  padding: 20px;
+                  margin: 10px;
+                "
+              >
+                test
+              </div>
+              <div
+                style="
+                  background-color: white;
+                  width: 20vw;
+                  height: 5vh;
+                  border-radius: 20px;
+                  padding: 20px;
+                  margin: 10px;
+                "
+              >
+                test
+              </div>
+              <div
+                style="
+                  background-color: white;
+                  width: 20vw;
+                  height: 5vh;
+                  border-radius: 20px;
+                  padding: 20px;
+                  margin: 10px;
+                "
+              >
+                test
+              </div>
+            </div>
+          </div>
+          <div>
+            <p style="font-weight: bold">Profil likés</p>
+            <div style="display: flex; width: 100%; flex-wrap: wrap">
+              <div
+                style="
+                  background-color: white;
+                  width: 20vw;
+                  height: 5vh;
+                  border-radius: 20px;
+                  margin: 10px;
+                  display: flex;
+                "
+              >
+                <img
+                  src="https://live.staticflickr.com/5252/5403292396_0804de9bcf_b.jpg"
+                  alt=""
+                  style="width: 20%; height: 100%; object-fit: cover"
+                />
+                <p style="margin: 10px">Léonie Arnaud</p>
+              </div>
+              <div
+                style="
+                  background-color: white;
+                  width: 20vw;
+                  height: 5vh;
+                  border-radius: 20px;
+                  margin: 10px;
+                  display: flex;
+                "
+              >
+                <img
+                  src="https://live.staticflickr.com/5252/5403292396_0804de9bcf_b.jpg"
+                  alt=""
+                  style="width: 20%; height: 100%; object-fit: cover"
+                />
+                <p style="margin: 10px">Léonie Arnaud</p>
+              </div>
+              <div
+                style="
+                  background-color: white;
+                  width: 20vw;
+                  height: 5vh;
+                  border-radius: 20px;
+                  margin: 10px;
+                  display: flex;
+                "
+              >
+                <img
+                  src="https://live.staticflickr.com/5252/5403292396_0804de9bcf_b.jpg"
+                  alt=""
+                  style="width: 20%; height: 100%; object-fit: cover"
+                />
+                <p style="margin: 10px">Léonie Arnaud</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      "use strict";
+
+      var tinderContainer = document.getElementById("tinder");
+      var allCards = document.querySelectorAll(".tinder--card");
+      var nope = document.getElementById("nope");
+      var love = document.getElementById("love");
+
+      function initCards(card, index) {
+        var newCards = document.querySelectorAll(".tinder--card:not(.removed)");
+
+        newCards.forEach(function (card, index) {
+          card.style.zIndex = allCards.length - index;
+          card.style.transform =
+            "scale(" +
+            (20 - index) / 20 +
+            ") translateY(-" +
+            30 * index +
+            "px)";
+          card.style.opacity = (10 - index) / 10;
+        });
+
+        tinderContainer.classList.add("loaded");
+      }
+
+      initCards();
+
+      allCards.forEach(function (el) {
+        var hammertime = new Hammer(el);
+
+        hammertime.on("pan", function (event) {
+          el.classList.add("moving");
+        });
+
+        hammertime.on("pan", function (event) {
+          if (event.deltaX === 0) return;
+          if (event.center.x === 0 && event.center.y === 0) return;
+
+          tinderContainer.classList.toggle("tinder_love", event.deltaX > 0);
+          tinderContainer.classList.toggle("tinder_nope", event.deltaX < 0);
+
+          var xMulti = event.deltaX * 0.03;
+          var yMulti = event.deltaY / 80;
+          var rotate = xMulti * yMulti;
+
+          event.target.style.transform =
+            "translate(" +
+            event.deltaX +
+            "px, " +
+            event.deltaY +
+            "px) rotate(" +
+            rotate +
+            "deg)";
+        });
+
+        hammertime.on("panend", function (event) {
+          el.classList.remove("moving");
+          tinderContainer.classList.remove("tinder_love");
+          tinderContainer.classList.remove("tinder_nope");
+
+          var moveOutWidth = document.body.clientWidth;
+          var keep =
+            Math.abs(event.deltaX) < 80 || Math.abs(event.velocityX) < 0.5;
+
+          event.target.classList.toggle("removed", !keep);
+
+          if (keep) {
+            event.target.style.transform = "";
+          } else {
+            var endX = Math.max(
+              Math.abs(event.velocityX) * moveOutWidth,
+              moveOutWidth
+            );
+            var toX = event.deltaX > 0 ? endX : -endX;
+            var endY = Math.abs(event.velocityY) * moveOutWidth;
+            var toY = event.deltaY > 0 ? endY : -endY;
+            var xMulti = event.deltaX * 0.03;
+            var yMulti = event.deltaY / 80;
+            var rotate = xMulti * yMulti;
+
+            event.target.style.transform =
+              "translate(" +
+              toX +
+              "px, " +
+              (toY + event.deltaY) +
+              "px) rotate(" +
+              rotate +
+              "deg)";
+            initCards();
+          }
+        });
+      });
+
+      function createButtonListener(love) {
+        return function (event) {
+          var cards = document.querySelectorAll(".tinder--card:not(.removed)");
+          var moveOutWidth = document.body.clientWidth * 1.5;
+
+          if (!cards.length) return false;
+
+          var card = cards[0];
+
+          card.classList.add("removed");
+
+          if (love) {
+            card.style.transform =
+              "translate(" + moveOutWidth + "px, -100px) rotate(-30deg)";
+          } else {
+            card.style.transform =
+              "translate(-" + moveOutWidth + "px, -100px) rotate(30deg)";
+          }
+
+          initCards();
+
+          event.preventDefault();
+        };
+      }
+
+      var nopeListener = createButtonListener(false);
+      var loveListener = createButtonListener(true);
+
+      nope.addEventListener("click", nopeListener);
+      love.addEventListener("click", loveListener);
+    </script>
+  </body>
+</html>

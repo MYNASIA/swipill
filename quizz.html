@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swipill</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  </head>
+  <body>
+    <div class="layer">
+      <div
+        style="
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <div
+          style="
+            width: 90%;
+            height: 90%;
+            background-color: #2e2b1f;
+            border-radius: 50px;
+            padding: 1vw;
+          "
+        >
+          <div
+            id="title"
+            style="
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              height: 100%;
+            "
+          >
+            <p
+              style="
+                font-size: 4vw;
+                font-weight: bolder;
+                color: white;
+                text-align: center;
+              "
+            >
+              LE QUIZZ DE LA COMMUNICATION RESPONSABLE
+            </p>
+            <button
+              onclick="startQuizz()"
+              class="button-green"
+              style="padding: 1.5vw; font-size: 2vw; font-weight: bold"
+            >
+              <i style="margin-top: 100px"></i>Démarrer >
+            </button>
+          </div>
+          <div
+            id="question-text"
+            style="
+              display: none;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              height: 100%;
+            "
+          >
+            <p
+              id="question-text-question"
+              style="
+                font-size: 1.5vw;
+                font-weight: bolder;
+                color: white;
+                text-align: center;
+              "
+            >
+              Ceci est une longue qustion car yasmina est chiante avec ces
+              questions de merde Ceci est une longue qustion car yasmina est
+              chiante avec ces questions de merde
+            </p>
+            <div
+              style="
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: column;
+                width: 100%;
+              "
+            >
+              <button
+                onclick="selectAnwser(0)"
+                id="reponse-text-1"
+                class="button-white"
+                style="min-width: 50%"
+              >
+                Réponse 1
+              </button>
+              <button
+                onclick="selectAnwser(1)"
+                id="reponse-text-2"
+                class="button-white"
+                style="min-width: 50%"
+              >
+                Réponse 2
+              </button>
+              <button
+                onclick="selectAnwser(2)"
+                id="reponse-text-3"
+                class="button-white"
+                style="min-width: 50%"
+              >
+                Réponse 3
+              </button>
+            </div>
+          </div>
+          <div
+            id="question-image"
+            style="
+              display: none;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              height: 100%;
+            "
+          >
+            <div
+              style="display: flex; justify-content: space-around; width: 80%"
+            >
+              <img
+                id="image-1"
+                src="leaf_pattern.jpg"
+                style="width: 48%; height: auto"
+                alt=""
+              />
+              <img
+                id="image-2"
+                src="leaf_pattern.jpg"
+                style="width: 48%; height: auto"
+                alt=""
+              />
+            </div>
+            <p
+              id="question-image-question"
+              style="
+                font-size: 1.5vw;
+                font-weight: bolder;
+                color: white;
+                text-align: center;
+                margin-top: 5%;
+              "
+            >
+              Question type
+            </p>
+            <div
+              style="
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: center;
+                width: 100%;
+              "
+            >
+              <button
+                onclick="selectAnwser(0)"
+                id="reponse-image-1"
+                class="button-white"
+                style="width: 40%"
+              >
+                Réponse 1
+              </button>
+              <button
+                onclick="selectAnwser(2)"
+                id="reponse-image-2"
+                class="button-white"
+                style="width: 40%"
+              >
+                Réponse 2
+              </button>
+            </div>
+          </div>
+          <div
+            id="final-score"
+            style="
+              display: none;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              height: 80vh;
+              margin-top: 20px;
+            "
+          >
+            <p
+              style="
+                font-size: 2vw;
+                font-weight: bolder;
+                color: white;
+                text-align: center;
+              "
+            >
+              ton score est de
+            </p>
+            <p
+              style="
+                font-size: 4vw;
+                margin: 0;
+                font-weight: bolder;
+                color: white;
+                text-align: center;
+              "
+            >
+              <span id="score-text">test<span> / 100
+            </p>
+            <p id="score-text-explication"
+            style="
+            font-size: 2vw;
+            font-weight: normal;
+            color: white;
+            text-align: center;
+          ">cela veut dire que tu es débile
+          </p>
+          <a
+              href="swipper.html"
+              class="button-green"
+              style="padding: 1.5vw; font-size: 2vw; font-weight: bold"
+            >
+              Continuer
+            </a>
+            <a href="quizz.html" style="text-decoration: none; color: white;"><i class="bx bx-undo" style="margin-right: 10px; margin-top: 10px;"></i>recommencer </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let questionsNumber = 0;
+      let score = 0;
+      let questions = [
+        {
+          type: "image",
+          image1:
+            "https://cdn.futura-sciences.com/sources/images/dossier/773/01-intro-773.jpg",
+          image2:
+            "https://99designs-blog.imgix.net/blog/wp-content/uploads/2016/03/web-images.jpg?auto=format&q=60&w=1600&h=824&fit=crop&crop=faces",
+          question:
+            "Ceci est une ENCORE question, à vous de trouver la réponse",
+          answers: ["tu as ENCORE raison", "sitpi est trop beau et très fort"],
+          goodAnswer: 0,
+        },
+        {
+          type: "text",
+          question: "Ceci est une question, à vous de trouver la réponse",
+          answers: [
+            "tu as raison",
+            "tu as tort",
+            "sitpi est trop fort",
+          ],
+          goodAnswer: 0,
+        },
+        {
+          type: "text",
+          question: "encore une nouvelle question, ptdr, wtf",
+          answers: [
+            "encore, ça fait beaucoup là",
+            "je vais pas faire le meme de mister v",
+            "les produits laitiers, sont nos amis pour la vies",
+          ],
+          goodAnswer: 0,
+        },
+        {
+          type: "text",
+          question:
+            "Ceci est une ENCORE question, à vous de trouver la réponse",
+          answers: [
+            "tu as ENCORE raison",
+            "tu as ENCORE tort",
+            "sitpi est trop beau et très fort",
+          ],
+          goodAnswer: 0,
+        },
+      ];
+
+      function startQuizz() {
+        questionsNumber = -1;
+        document.getElementById("title").style.display = "none";
+        setNextQuestion();
+      }
+      function setNextQuestion() {
+        questionsNumber += 1;
+        if (questionsNumber > questions.length - 1) {
+          finishQuizz();
+          return;
+        }
+        if (questions[questionsNumber].type == "text") {
+          document.getElementById("question-text").style.display = "flex";
+          document.getElementById("question-image").style.display = "none";
+          document.getElementById("question-text-question").innerText =
+            questions[questionsNumber].question;
+          document.getElementById("reponse-text-1").innerText =
+            questions[questionsNumber].answers[0];
+          document.getElementById("reponse-text-2").innerText =
+            questions[questionsNumber].answers[1];
+          document.getElementById("reponse-text-3").innerText =
+            questions[questionsNumber].answers[2];
+        }
+        if (questions[questionsNumber].type == "image") {
+          document.getElementById("question-text").style.display = "none";
+          document.getElementById("question-image").style.display = "flex";
+          document.getElementById("question-image-question").innerText =
+            questions[questionsNumber].question;
+
+          document.getElementById("image-1").src =
+            questions[questionsNumber].image1;
+          document.getElementById("image-2").src =
+            questions[questionsNumber].image2;
+          document.getElementById("reponse-image-1").innerText =
+            questions[questionsNumber].answers[0];
+          document.getElementById("reponse-image-2").innerText =
+            questions[questionsNumber].answers[1];
+        }
+      }
+      function selectAnwser(number) {
+        console.log( questions[questionsNumber].goodAnswer)
+        if (number == questions[questionsNumber].goodAnswer) score += 20;
+        setNextQuestion();
+      }
+      function finishQuizz() {
+        document.getElementById("question-image").style.display = 'none'
+        document.getElementById("question-text").style.display = 'none'
+        document.getElementById("final-score").style.display = 'flex'
+        document.getElementById("score-text").innerText = score
+        document.getElementById("score-text").innerText = score
+        if (score >= 0)
+        document.getElementById("score-text-explication").innerText = "TEXT POUR 0"
+        if (score >= 10)
+        document.getElementById("score-text-explication").innerText = "TEXT POUR 10"
+        if (score >= 30)
+        document.getElementById("score-text-explication").innerText = "TEXT POUR 30"
+        if (score >= 50)
+        document.getElementById("score-text-explication").innerText = "TEXT POUR 50"
+        if (score >= 70)
+        document.getElementById("score-text-explication").innerText = "TEXT POUR 70"
+        if (score >= 100)
+        document.getElementById("score-text-explication").innerText = "TEXT POUR 100"
+            
+      }
+    </script>
+  </body>
+</html>
