@@ -52,8 +52,13 @@
               class="button-green"
               style="padding: 1.5vw; font-size: 2vw; font-weight: bold"
             >
-              <i style="margin-top: 100px"></i>Démarrer >
+              <i style="margin-top: 100px"></i>Démarrer le quizz candidat>
             </button>
+            <a href="inscription_entreprise.html" target="_blank">
+              <button 
+                class="button-green"
+                style="padding: 1.5vw; font-size: 2vw; font-weight: bold">S'inscrire en tant qu'entreprise</button>
+          </a>
           </div>
           <div
             id="question-text"
@@ -198,7 +203,7 @@
                 text-align: center;
               "
             >
-              ton score est de
+              Ton score est de
             </p>
             <p
               style="
@@ -220,7 +225,7 @@
           ">cela veut dire que tu es débile
           </p>
           <a
-              href="swipper.html"
+              href="inscription_candidat.html"
               class="button-green"
               style="padding: 1.5vw; font-size: 2vw; font-weight: bold"
             >
@@ -236,45 +241,190 @@
       let score = 0;
       let questions = [
         {
+          type: "text",
+          question: "1) Quel terme décrit le mieux la pratique consistant à mettre en avant des caractéristiques environnementales positives sans réelle amélioration?",
+          answers: [
+            "Greenwashing",
+            "Éco-communication",
+            "Bio-publicité",
+          ],
+          goodAnswer: 0,
+        },
+        {
+          type: "text",
+          question: "2) Le secteur de la communication peut-il être écologique ?",
+          answers: [
+            "Oui",
+            "Non",
+          ],
+          goodAnswer: 0,
+        },
+        {
           type: "image",
           image1:
-            "https://cdn.futura-sciences.com/sources/images/dossier/773/01-intro-773.jpg",
+            "https://eu-images.contentstack.com/v3/assets/blt5004e64d3579c43f/bltcfa85b59540b0a51/61e2a84aa91f4f3f37eb632a/fin_des_jouets_en_plastique.png.jpg?auto=webp",
           image2:
-            "https://99designs-blog.imgix.net/blog/wp-content/uploads/2016/03/web-images.jpg?auto=format&q=60&w=1600&h=824&fit=crop&crop=faces",
+            "https://www.dop.fr/-/media/jss-dop/4.ashx?h=1080&iar=0&w=1080",
           question:
-            "Ceci est une ENCORE question, à vous de trouver la réponse",
-          answers: ["tu as ENCORE raison", "sitpi est trop beau et très fort"],
+            "3) Parmi ces images, choissisez celle qui n’est pas du greenwashing.",
+          answers: ["Mc Donald", "DOP"],
           goodAnswer: 0,
         },
         {
           type: "text",
-          question: "Ceci est une question, à vous de trouver la réponse",
+          question:
+            "4) Comment pouvez-vous éviter le greenwashing ? ",
           answers: [
-            "tu as raison",
-            "tu as tort",
-            "sitpi est trop fort",
-          ],
-          goodAnswer: 0,
-        },
-        {
-          type: "text",
-          question: "encore une nouvelle question, ptdr, wtf",
-          answers: [
-            "encore, ça fait beaucoup là",
-            "je vais pas faire le meme de mister v",
-            "les produits laitiers, sont nos amis pour la vies",
+            "Se former à la Communication Responsable",
+            "Faire une veille sur les tendances en communication",
+            "Faire de la publicité sur ces questions",
           ],
           goodAnswer: 0,
         },
         {
           type: "text",
           question:
-            "Ceci est une ENCORE question, à vous de trouver la réponse",
+            "5) L’inclusion c’est",
           answers: [
-            "tu as ENCORE raison",
-            "tu as ENCORE tort",
-            "sitpi est trop beau et très fort",
+            "Permettre à chaque citoyen de participer pleinement à la société et d’occuper un emploi",
+            "Donner l’accès aux soins gratuits pour tous les citoyens ",
           ],
+          goodAnswer: 0,
+        },
+        {
+          type: "image",
+          image1:
+            "https://i.insider.com/5453a9c1ecad047519be023c?width=700&format=jpeg&auto=webp",
+          question:
+            "6) Cette campagne est problématique parce que : ",
+          answers: ["Elle met en avant des mannequins en sous-vêtement", "Elle ne montre pas assez de personnes âgées","Elle n’est pas assez inclusive en ne montrant qu’un seul type de corps"],
+          goodAnswer: 0,
+        },
+        {
+          type: "text",
+          question:
+            "7) Quels mots décrivent le mieux une publicité non stéréotypée en termes de genre?",
+          answers: [
+            "Utilisation de termes épicènes, genre neutre",
+            "Sexiste","Efficace et impactant",],
+          goodAnswer: 0,
+        },
+        {
+          type: "text",
+          question:
+            "8) Quelles sont les actions que vous pouvez mettre en place en faveur de l’inclusion sociale ?",
+          answers: [
+            "Regarder des vidéos youtube sur le sujet",
+            "Aller manifester"," Remettre en question mes propres préjugés",],
+          goodAnswer: 0,
+        },
+        {
+          type: "text",
+          question:
+            "9) Comment se nomme le groupe d’experts sur le climat dont les rapports évaluent les émissions de gaz à effet de serre et leurs répercussions sur l’environnement ?",
+          answers: [
+            "Climate Change",
+            "l’ARPP","Le GIEC",],
+          goodAnswer: 0,
+        },
+        {
+          type: "text",
+          question:
+            "10)  Parmi ces propositions, quel label ou certification est attribué aux entreprises à impact positif ?",
+          answers: [
+            "Green certificate",
+            "Le label change the world","B-corp",],
+          goodAnswer: 0,
+        },
+        {
+          type: "text",
+          question:
+            "11) Quel symbole certifie qu'un produit est recyclable ?",
+          answers: [
+            "le cercle de moebius",
+            "Le logo du point ver","Le triman",],
+          goodAnswer: 0,
+        },
+        {
+          type: "text",
+          question:
+            "12) Quel indicateur mesure l'impact environnemental global d'un produit, y compris son cycle de vie complet ?",
+          answers: [
+            "Empreinte carbone",
+            "Impact environnemental","Analyse du cycle de vie",],
+          goodAnswer: 0,
+        },
+        {
+          type: "text",
+          question:
+            "13) Le concept d’éco-conception c’est",
+          answers: [
+            "Intégrer la protection de l’environnement dès la conception d’un bien ou service",
+            "Produire un bien ou un service totalement neutre en carbone ",],
+          goodAnswer: 0,
+        },
+        {
+          type: "text",
+          question:
+            "14) Quel est l'objectif de l'éco-conception dans la communication?",
+          answers: [
+            "Réguler la consommation de ressources naturelles",
+            "Minimiser l’impact environnemental des supports de communication","Promouvoir l’utilisation de matériaux non recyclables",],
+          goodAnswer: 0,
+        },
+        {
+          type: "text",
+          question:
+            "15) Quelle est l’une des premières étapes du processus d'éco-conception d'un produit de communication?",
+          answers: [
+            "Choisir des couleurs attractives",
+            "Analyser son impact environnemental","Imprimer en masse sur du papier recyclé",],
+          goodAnswer: 0,
+        },
+        {
+          type: "text",
+          question:
+            "16) Quel facteur est essentiel pour l'éco-conception des sites web ?",
+          answers: [
+            "Un nombre de pages limités",
+            "La rapidité de chargement ","Des photos avec des couleurs vives",],
+          goodAnswer: 0,
+        },
+
+        {
+          type: "text",
+          question:
+            "17) Quelle pratique s’oppose à celle du numérique responsable ? ",
+          answers: [
+            "L'obsolescence programmée",
+            "La publicité ciblée","Le greenwashing",],
+          goodAnswer: 0,
+        },
+        {
+          type: "text",
+          question:
+            "18) Quelle est la principale différence entre la communication classique et la communication responsable ?",
+          answers: [
+            "Elle est centrée sur l’environnement et les bénéfices engendrés par le recyclage",
+            "Elle repose sur les principes de l’éco-socio-conception, du dialogue avec les parties prenantes, de l’efficacité et l’éthique des affaires","Elle est centrée sur l’environnement, les lois et la neutralité carbone",],
+          goodAnswer: 0,
+        },
+        {
+          type: "text",
+          question:
+            "19) Quelle est la principale directive européenne sur la protection des données qui impacte la communication responsable ?",
+          answers: [
+            "Directive de régulation de la vie privée ",
+            "RGPD (Règlement Général sur la Protection des Données)","Loi sur la confidentialité des communications sur les réseaux sociaux ",],
+          goodAnswer: 0,
+        },
+        {
+          type: "text",
+          question:
+            "20) Quel est le nom des instances qui fixent le cadre légal de la communication responsable ?",
+          answers: [
+            "ARPP et L’AFP",
+            "ADEME et L’OMS","L’ARPP et L’ADEME",],
           goodAnswer: 0,
         },
       ];
@@ -298,8 +448,42 @@
           document.getElementById("reponse-text-1").innerText =
             questions[questionsNumber].answers[0];
           document.getElementById("reponse-text-2").innerText =
-            questions[questionsNumber].answers[1];
+            questions[questionsNumber].answers[0];
           document.getElementById("reponse-text-3").innerText =
+            questions[questionsNumber].answers[1];
+          document.getElementById("reponse-text-4").innerText =
+            questions[questionsNumber].answers[0];
+          document.getElementById("reponse-text-5").innerText =
+            questions[questionsNumber].answers[0];
+            document.getElementById("reponse-text-6").innerText =
+            questions[questionsNumber].answers[2];
+          document.getElementById("reponse-text-7").innerText =
+            questions[questionsNumber].answers[0];
+          document.getElementById("reponse-text-8").innerText =
+            questions[questionsNumber].answers[2];
+          document.getElementById("reponse-text-9").innerText =
+            questions[questionsNumber].answers[2];
+          document.getElementById("reponse-text-10").innerText =
+            questions[questionsNumber].answers[2];
+            document.getElementById("reponse-text-11").innerText =
+            questions[questionsNumber].answers[0];
+          document.getElementById("reponse-text-12").innerText =
+            questions[questionsNumber].answers[2];
+          document.getElementById("reponse-text-13").innerText =
+            questions[questionsNumber].answers[0];
+          document.getElementById("reponse-text-14").innerText =
+            questions[questionsNumber].answers[1];
+          document.getElementById("reponse-text-15").innerText =
+            questions[questionsNumber].answers[1];
+            document.getElementById("reponse-text-16").innerText =
+            questions[questionsNumber].answers[1];
+          document.getElementById("reponse-text-17").innerText =
+            questions[questionsNumber].answers[0];
+          document.getElementById("reponse-text-18").innerText =
+            questions[questionsNumber].answers[1];
+          document.getElementById("reponse-text-19").innerText =
+            questions[questionsNumber].answers[1];
+          document.getElementById("reponse-text-20").innerText =
             questions[questionsNumber].answers[2];
         }
         if (questions[questionsNumber].type == "image") {
@@ -320,7 +504,7 @@
       }
       function selectAnwser(number) {
         console.log( questions[questionsNumber].goodAnswer)
-        if (number == questions[questionsNumber].goodAnswer) score += 20;
+        if (number == questions[questionsNumber].goodAnswer) score += 5;
         setNextQuestion();
       }
       function finishQuizz() {
