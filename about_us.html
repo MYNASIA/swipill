@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+      }
+
+      html {
+        box-sizing: border-box;
+        border-radius: 10px;
+      }
+
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+
+      .column {
+        float: left;
+        width: 33.3%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+      }
+
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: 8px;
+      }
+
+      .about-section {
+        padding: 50px;
+        text-align: center;
+        background-color: #474e5d;
+        color: white;
+      }
+
+      .container {
+        padding: 0 16px;
+      }
+
+      .container::after,
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .title {
+        color: grey;
+      }
+
+      .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      .button:hover {
+        background-color: #555;
+      }
+
+      @media screen and (max-width: 650px) {
+        .column {
+          width: 100%;
+          display: block;
+        }
+      }
+      * {
+        box-sizing: border-box;
+        border-radius: 10px;
+      }
+
+      /* Add a gray background color with some padding */
+      body {
+        font-family: "Poppins", sans-serif;
+        padding: 20px;
+        background: #f0ecddd8;
+      }
+
+      /* Header/Blog Title */
+      .header {
+        padding: 30px;
+        font-size: 40px;
+        text-align: center;
+        background: #f0ecddd8;
+      }
+
+      /* Create two unequal columns that floats next to each other */
+      /* Left column */
+      .leftcolumn {
+        float: left;
+        width: 75%;
+      }
+
+      /* Right column */
+      .rightcolumn {
+        float: left;
+        width: 25%;
+        padding-left: 20px;
+      }
+
+      /* Fake image */
+      .fakeimg {
+        background-color: #92b986;
+        width: 100%;
+        padding: 20px;
+      }
+
+      /* Add a card effect for articles */
+      .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Footer */
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        margin-top: 20px;
+      }
+
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 800px) {
+        .leftcolumn,
+        .rightcolumn {
+          width: 100%;
+          padding: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h2 style="font-weight: bold">À propos de nous</h2>
+    </div>
+    <h2 style="text-align: center"></h2>
+    <div class="card">
+        <h3 style="font-size: 200%; text-align: center; color: #000000; background-color: #bedab6;">Swipill</h3>
+          <p >Swipill, c'est le Tinder de la communication responsable pour les étudiants et les professionnels en quête de missions qui correspondent à leurs valeurs, et surtout, d’emplois qui les animent et les engagent (avec un espace formation en bonus).
+            <p>
+                <p >Imagine : Tu es sur Swipill, tu es hyper motivé par une offre d'emploi, à deux doigts du match, mais il te manque quelques compétences en communication responsable pour que l'entreprise tombe sous ton charme. Pas de panique, Swipill te propose de te former et de décrocher des badges pour faire chavirer le cœur des recruteurs.
+                    <P>
+                <h3 style="font-size: 200%; text-align: center; color: #000000; background-color: #bedab6;">Un badge, c'est quoi?</h3>
+          <P >C'est le passeport pour le monde de la communication responsable chez Swipill. Si tu as les compétences, tu décroches le badge, tout simplement.</P>
+
+            <P >Aujourd'hui, de nombreux communicants prétendent maîtriser les principes de la communication responsable, mais entre nous, ils ne savent pas réellement comment s’y prendre. Swipill leur offre l’opportunité de se rattraper avec des formations fun sur le greenwashing, les lois de la communication responsable, l'inclusion sociale, l’éco-socio-conception, l'environnement, et bien plus encore.
+            <p >À coup d'e-learning, d'études de cas funky et de quizz délirants; étudiants et professionnels peuvent acquérir de nouvelles compétences et arborer fièrement leurs badges de  « pros de la communication responsable »            <h1>
+                <h3 style="font-size: 200%; text-align: center; color: #000000; background-color: #bedab6;">Sur le site de Swipill, tu trouves:</h3>
+                <p >Un espace candidat : Des offres d'emploi, de stages, d'alternance qui se présentent comme des profils d'entreprises avec lesquelles tu peux matcher. (Comme sur Tinder on a dit.)
+                 <P>Un espace recruteur : Où ces derniers trouvent les candidats qui ont exactement les compétences qu'ils recherchent et avec lesquelles ils peuvent aussi matcher. (Ça fonctionne dans les deux sens.) 
+                </P>
+                <p>Un espace formation : Pour les candidats qui manquent de compétences à l’instant T.  Swipill offre l’opportunité de se former et de décrocher des badges pour briller aux yeux des recruteurs.
+                </P>
+                    <h3 style="font-size: 200%; text-align: center; color: #000000; background-color: #bedab6;">Mais du coup comment ça se passe ?</h3>
+                    <P >Tu fais un petit quizz pour évaluer ton niveau en communication responsable. Tu t’inscris puis tu transfères tes diplômes, ton CV, tu décris tes expériences professionnelles et tes compétences pour voir si tu as déjà des badges. Par exemple, chez Swipill, un diplôme en communication responsable ou une expérience dans le domaine, c'est déjà un badge dans la poche ! 
+                        <p>Et puisque c’est un peu la course aux badges, plus tu en as, plus tu as de chance de matcher avec un recruteur ! Simple on a dit. 
+                        </P>
+                        <h3 style="font-size: 200%; text-align: center; color: #000000; background-color: #bedab6;">Et quand ça match, qu'est-ce qu'il se passe ?</h3>
+                        <P >Le recrutement démarre et là, c'est à toi de jouer. Trois étapes max, promis ! Conformément à nos conditions générales d’utilisation (on ne les lit pas souvent, mais là ça compte) Swipill oblige les entreprises à être transparentes à chaque étape. 
+                            <p>Si tu n'es pas retenu, le recruteur te le dira asap avec les raisons du refus. Savoir qu’on n’est pas engagé ce n’est pas cool, mais savoir pourquoi afin de s’améliorer et affiner sa stratégie, c’est quand même mieux. 
+                            </p>
+                            L'inverse vaut aussi pour le candidat. Si après un match, tu changes d'avis, informe le recruteur, sois sympa. Personne n'aime être ghosté (même pas ton horrible date Tinder d’il y a une semaine) !
+                                                      <P>
+                            <h3 style="font-size: 200%; text-align: center; color: #000000; background-color: #bedab6;">En clair, nos objetifs ?</h3>
+                            <P >Proposer des emplois en communication qui déchirent, en adéquation avec le monde d'aujourd'hui et tes valeurs
+                            </P><p>   Permettre aux communicants de se former à la communication responsable en s'amusant
+                            </p><p> le processus de recrutement en le rendant plus fun</p>
+                                <h3 style="font-size: 200%; text-align: center; color: #000000; background-color: #bedab6;">Pourquoi Swipill ?</h3>
+                                <P >Swipill c’est un mix entre « swipe » et « pill ». 
+                                    <p>C'est en swipant que le recruteur trouve le communicant de ses rêves, et vice versa. Swipill simplifie et rend fun le processus de recrutement pour éviter qu’il ressemble à un parcours du combattant. On veut que ça soit easy et fun, tout simplement.
+                                    </p>Puis « pill » parce que dans la team on aime bien Matrix et qu’on croit qu’en matière de communication responsable, tous les communicants devraient se la jouer Neo. (Neo c’est le héros du film Matrix pour ceux qui ont zéro en pop culture. Regarde-le il est génial.) 
+                                    <p> Face à l’urgence climatique, à la montée des inégalités, à la défiance croissante envers les médias, on pense qu’il est nécessaire de prendre la pilule rouge. C'est-à-dire de faire le choix d’accepter que le réchauffement climatique n’est pas une fake news et de se mettre en mouvement pour faire changer les choses, bouger les lignes. 
+                                        <p>Alors 3-2-1, c’est parti ! 
+                                            <p>Soyons créatifs, créons ! Soyons créatifs, swippons (ce verbe n’existe pas mais vous avez compris l’idée) ! 
+                                                <p>C’est en réinventant nos métiers et en communiquant mieux ensemble qu’on va y arriver ! 
+                                                                      <P>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
