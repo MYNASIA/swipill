@@ -6,7 +6,6 @@
     <title>Swipill</title>
     <link rel="stylesheet" href="style.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
   </head>
   <body>
     <div class="layer">
@@ -203,7 +202,7 @@
                 text-align: center;
               "
             >
-              Ton score est de
+              ton score est de
             </p>
             <p
               style="
@@ -244,7 +243,7 @@
           type: "text",
           question: "1) Quel terme décrit le mieux la pratique consistant à mettre en avant des caractéristiques environnementales positives sans réelle amélioration?",
           answers: [
-            "Greenwashing",
+            "Greenwashig",
             "Éco-communication",
             "Bio-publicité",
           ],
@@ -255,7 +254,7 @@
           question: "2) Le secteur de la communication peut-il être écologique ?",
           answers: [
             "Oui",
-            "Non",
+            "Non","Je ne sais pas",
           ],
           goodAnswer: 0,
         },
@@ -267,7 +266,7 @@
             "https://www.dop.fr/-/media/jss-dop/4.ashx?h=1080&iar=0&w=1080",
           question:
             "3) Parmi ces images, choissisez celle qui n’est pas du greenwashing.",
-          answers: ["Mc Donald", "DOP"],
+          answers: ["Mc Donald", "DOP","je saispas"],
           goodAnswer: 0,
         },
         {
@@ -287,7 +286,7 @@
             "5) L’inclusion c’est",
           answers: [
             "Permettre à chaque citoyen de participer pleinement à la société et d’occuper un emploi",
-            "Donner l’accès aux soins gratuits pour tous les citoyens ",
+            "Donner l’accès aux soins gratuits pour tous les citoyens ","Je ne sais pas",
           ],
           goodAnswer: 0,
         },
@@ -297,24 +296,26 @@
             "https://i.insider.com/5453a9c1ecad047519be023c?width=700&format=jpeg&auto=webp",
           question:
             "6) Cette campagne est problématique parce que : ",
-          answers: ["Elle met en avant des mannequins en sous-vêtement", "Elle ne montre pas assez de personnes âgées","Elle n’est pas assez inclusive en ne montrant qu’un seul type de corps"],
+          answers: ["Elle met en avant des mannequins en sous-vêtements", 
+          "Elle ne montre pas assez de personnes âgées",
+          "Elle n’est pas assez inclusive en ne montrant qu’un seul type de corps"],
           goodAnswer: 0,
         },
         {
           type: "text",
           question:
-            "7) Quels mots décrivent le mieux une publicité non stéréotypée en termes de genre?",
+            "7) Avec quel(s) mot(s) peut-on le mieux décrire une publicité non stéréotypée ?",
           answers: [
-            "Utilisation de termes épicènes, genre neutre",
-            "Sexiste","Efficace et impactant",],
+            "Termes épicènes et genre neutre",
+            "Sexisme","Efficace et impactant",],
           goodAnswer: 0,
         },
         {
           type: "text",
           question:
-            "8) Quelles sont les actions que vous pouvez mettre en place en faveur de l’inclusion sociale ?",
+            "8) Quelle action pouvez-vous mettre en place en faveur de l’inclusion sociale ?",
           answers: [
-            "Regarder des vidéos youtube sur le sujet",
+            "Regarder des vidéos Youtube sur le sujet",
             "Aller manifester"," Remettre en question mes propres préjugés",],
           goodAnswer: 0,
         },
@@ -330,7 +331,7 @@
         {
           type: "text",
           question:
-            "10)  Parmi ces propositions, quel label ou certification est attribué aux entreprises à impact positif ?",
+            "10)  Parmis ces propositions, quel label ou certification est attribué aux entreprises à impact positif ?",
           answers: [
             "Green certificate",
             "Le label change the world","B-corp",],
@@ -360,7 +361,7 @@
             "13) Le concept d’éco-conception c’est",
           answers: [
             "Intégrer la protection de l’environnement dès la conception d’un bien ou service",
-            "Produire un bien ou un service totalement neutre en carbone ",],
+            "Produire un bien ou un service totalement neutre en carbone ","je ne sais pas"],
           goodAnswer: 0,
         },
         {
@@ -428,7 +429,6 @@
           goodAnswer: 0,
         },
       ];
-
       function startQuizz() {
         questionsNumber = -1;
         document.getElementById("title").style.display = "none";
@@ -448,19 +448,19 @@
           document.getElementById("reponse-text-1").innerText =
             questions[questionsNumber].answers[0];
           document.getElementById("reponse-text-2").innerText =
-            questions[questionsNumber].answers[0];
-          document.getElementById("reponse-text-3").innerText =
             questions[questionsNumber].answers[1];
-          document.getElementById("reponse-text-4").innerText =
+          document.getElementById("reponse-text-3").innerText =
+            questions[questionsNumber].answers[2];
+            document.getElementById("reponse-text-4").innerText =
             questions[questionsNumber].answers[0];
           document.getElementById("reponse-text-5").innerText =
-            questions[questionsNumber].answers[0];
-            document.getElementById("reponse-text-6").innerText =
+            questions[questionsNumber].answers[1];
+          document.getElementById("reponse-text-6").innerText =
             questions[questionsNumber].answers[2];
-          document.getElementById("reponse-text-7").innerText =
+            document.getElementById("reponse-text-7").innerText =
             questions[questionsNumber].answers[0];
           document.getElementById("reponse-text-8").innerText =
-            questions[questionsNumber].answers[2];
+            questions[questionsNumber].answers[1];
           document.getElementById("reponse-text-9").innerText =
             questions[questionsNumber].answers[2];
           document.getElementById("reponse-text-10").innerText =
@@ -468,22 +468,22 @@
             document.getElementById("reponse-text-11").innerText =
             questions[questionsNumber].answers[0];
           document.getElementById("reponse-text-12").innerText =
-            questions[questionsNumber].answers[2];
-          document.getElementById("reponse-text-13").innerText =
-            questions[questionsNumber].answers[0];
-          document.getElementById("reponse-text-14").innerText =
             questions[questionsNumber].answers[1];
+          document.getElementById("reponse-text-13").innerText =
+            questions[questionsNumber].answers[2];
+            document.getElementById("reponse-text-14").innerText =
+            questions[questionsNumber].answers[0];
           document.getElementById("reponse-text-15").innerText =
             questions[questionsNumber].answers[1];
-            document.getElementById("reponse-text-16").innerText =
-            questions[questionsNumber].answers[1];
-          document.getElementById("reponse-text-17").innerText =
+          document.getElementById("reponse-text-16").innerText =
+            questions[questionsNumber].answers[2];
+            document.getElementById("reponse-text-17").innerText =
             questions[questionsNumber].answers[0];
           document.getElementById("reponse-text-18").innerText =
             questions[questionsNumber].answers[1];
           document.getElementById("reponse-text-19").innerText =
-            questions[questionsNumber].answers[1];
-          document.getElementById("reponse-text-20").innerText =
+            questions[questionsNumber].answers[2];
+            document.getElementById("reponse-text-20").innerText =
             questions[questionsNumber].answers[2];
         }
         if (questions[questionsNumber].type == "image") {
@@ -491,7 +491,6 @@
           document.getElementById("question-image").style.display = "flex";
           document.getElementById("question-image-question").innerText =
             questions[questionsNumber].question;
-
           document.getElementById("image-1").src =
             questions[questionsNumber].image1;
           document.getElementById("image-2").src =
@@ -508,24 +507,24 @@
         setNextQuestion();
       }
       function finishQuizz() {
+
         document.getElementById("question-image").style.display = 'none'
         document.getElementById("question-text").style.display = 'none'
         document.getElementById("final-score").style.display = 'flex'
         document.getElementById("score-text").innerText = score
         document.getElementById("score-text").innerText = score
         if (score >= 0)
-        document.getElementById("score-text-explication").innerText = "TEXT POUR 0"
+        document.getElementById("score-text-explication").innerText = "Aie ! Tu n’as aucun badge, la communication responsable et toi, c’est pas trop ça. Le bon côté des choses ? Tu vas pouvoir te former sur Swipill. Allez futur expert, suis le lapin blanc. "
         if (score >= 10)
-        document.getElementById("score-text-explication").innerText = "TEXT POUR 10"
+        document.getElementById("score-text-explication").innerText = "Bon, tu n’as aucun badge mais la communication responsable te dit vaguement quelque chose. On t’invite à suivre le lapin blanc et à t’inscrire sur le site pour approfondir tes connaissances"
         if (score >= 30)
-        document.getElementById("score-text-explication").innerText = "TEXT POUR 30"
+        document.getElementById("score-text-explication").innerText = "Bel effort ! Tu as un badge, c’est-à-dire quelques notions de communication responsable. Continue tes efforts et viens te former avec nous."
         if (score >= 50)
-        document.getElementById("score-text-explication").innerText = "TEXT POUR 50"
+        document.getElementById("score-text-explication").innerText = "Pas mal, Mr. Anderson ! Tu as deux badges et donc des bases solides en communication responsable. Poursuis tes efforts, tu pourras bientôt débunker la Matrix et débusquer tous les agents Smith qui s’y cachent. "
         if (score >= 70)
-        document.getElementById("score-text-explication").innerText = "TEXT POUR 70"
+        document.getElementById("score-text-explication").innerText = "Wow ! Tu as trois badges ! En matière de communication responsable, tu es carrément en passe de devenir l’élu. On t’invite à t’inscrire pour continuer à approfondir tes connaissances."
         if (score >= 100)
-        document.getElementById("score-text-explication").innerText = "TEXT POUR 100"
-            
+        document.getElementById("score-text-explication").innerText = " Bravo ! Tu as tous les badges ! La communication responsable n’a plus aucun secret pour toi (ou presque). Comme dirait Morpheus dans Matrix : “ On n’est pas le meilleur quand on le croit mais quand on le sait Neo ! ” "
       }
     </script>
   </body>
