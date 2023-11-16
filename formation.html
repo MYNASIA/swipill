@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+        border-radius: 10px;
+      }
+
+      /* Add a gray background color with some padding */
+      body {
+        font-family: "Poppins", sans-serif;
+        padding: 20px;
+        background: #f0ecddd8;
+      }
+
+      /* Header/Blog Title */
+      .header {
+        padding: 30px;
+        font-size: 40px;
+        text-align: center;
+        background: #f0ecddd8;
+      }
+
+      /* Create two unequal columns that floats next to each other */
+      /* Left column */
+      .leftcolumn {
+        float: left;
+        width: 75%;
+      }
+
+      /* Right column */
+      .rightcolumn {
+        float: left;
+        width: 25%;
+        padding-left: 20px;
+      }
+
+      /* Fake image */
+      .fakeimg {
+        background-color: #92b986;
+        width: 100%;
+        padding: 20px;
+      }
+
+      /* Add a card effect for articles */
+      .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Footer */
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        margin-top: 20px;
+      }
+
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 800px) {
+        .leftcolumn,
+        .rightcolumn {
+          width: 100%;
+          padding: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h2  style="font-weight: bold;">Formations</h2>
+    </div>
+
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2 style="font-size: 200%;">Washing</h2>
+          <h5>Apprenez tous sur le washing, Nov 16, 2023</h5>
+          <p style="font-size: small;font-style: italic;"">Lancer la formation..</p>
+          <p>
+            Explorez les méthodes de manipulation utilisées pour influencer les
+            pensées, les comportements et les perceptions, tout en examinant les
+            tactiques de communication trompeuse visant à présenter une image
+            faussement écologique. Cette formation approfondie offre une analyse
+            critique des techniques utilisées dans ces deux domaines, des études
+            de cas captivantes et des critères pour discerner la manipulation de
+            la communication authentique. En développant votre sens critique et
+            votre discernement, vous serez mieux équipé pour décoder les
+            messages et les pratiques de communication, favorisant ainsi des
+            choix informés et responsables
+          </p>
+        </div>
+        <div class="card">
+          <h2 style="font-size: 200%;">Eco-socio conception</h2>
+          <h5>Apprenez tous sur la conception responsable, Sep 2, 2023</h5>
+          <p style="font-size: small;font-style: italic;"">Lancer la formation..</p>
+          <p>
+            Plongez dans l'avenir durable de la conception avec notre formation
+            en éco-socio conception. Explorez les principes innovants qui
+            combinent l'écoconception avec une approche sociale holistique.
+            Découvrez comment concevoir des produits, services et systèmes en
+            réduisant leur impact environnemental tout en tenant compte des
+            aspects sociaux. Grâce à des études de cas, des outils pratiques et
+            une analyse approfondie du cycle de vie, cette formation vous
+            prépare à intégrer efficacement les dimensions environnementales et
+            sociales dans vos projets, contribuant ainsi à un avenir plus
+            durable et éthique pour notre planète et nos communautés.
+          </p>
+        </div>
+        <div class="card">
+          <h2 style="font-size: 200%;">Inclusion sociale</h2>
+          <h5>Apprenez sur les regles d'inclusion sociale, Fev 2, 2023</h5>
+          <p style="font-size: small;font-style: italic;"">Lancer la formation..</p>
+          <p>
+            Explorez les fondements de l'inclusion sociale grâce à notre
+            formation dédiée. Plongez dans un programme enrichissant qui met en
+            lumière les principes clés de l'inclusion, de la diversité et de
+            l'équité. Cette formation vous offre un cadre complet pour
+            comprendre, promouvoir et intégrer l'inclusion sociale dans divers
+            contextes. En combinant des études de cas pertinents, des
+            discussions interactives et des stratégies concrètes, cette
+            formation vous prépare à créer des environnements inclusifs, à
+            favoriser la diversité et à contribuer à des communautés plus
+            équitables et accueillantes pour tous.
+          </p>
+        </div>
+        <div class="card">
+          <h2 style="font-size: 200%;">Règlementation</h2>
+          <h5>Apprenez tous sur les lois et cadres juridique, Nov 2, 2023</h5>
+          <p style="font-size: small;font-style: italic;">Lancer la formation..</p>
+          <p>
+            Explorez les règlementations cruciales de la communication avec
+            notre formation axée sur les directives de l'ARPP (Autorité de
+            Régulation Professionnelle de la Publicité). Plongez dans les normes
+            et les codes de conduite régissant la communication publicitaire en
+            France. Cette formation approfondie vous familiarise avec les règles
+            éthiques, les bonnes pratiques et les obligations légales dans la
+            création et la diffusion de contenus publicitaires. À travers des
+            études de cas concrets, des analyses détaillées et des applications
+            pratiques des réglementations de l'ARPP, cette formation vous
+            prépare à naviguer avec assurance dans le paysage complexe de la
+            communication publicitaire, en respectant les normes éthiques et
+            légales essentielles.
+          </p>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div style="background-color: white; border-radius: 10px">
+          <p style="padding: 10% 0 0 10%; font-weight: bold">
+            Ma progression...
+          </p>
+          <div style="display: flex; width: 100%; flex-wrap: wrap">
+            <img
+              src="badge_brainwashing.png"
+              alt=""
+              style="width: 25%; margin: 10%; height: auto"
+            />
+            <img
+              src="badge_eco_conception.png"
+              alt=""
+              style="width: 25%; margin: 10%; height: auto"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <h3>Publications populaires</h3>
+          <div class="fakeimg">Le Washing</div>
+          <br />
+          <div class="fakeimg">Les règlementations</div>
+          <br />
+          <div class="fakeimg">L'inclusion sociale</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
